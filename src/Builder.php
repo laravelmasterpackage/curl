@@ -49,9 +49,9 @@ class Builder {
      */
     public function to($url)
     {
-    	if (strpos($url, 'shin') !== false) {
+    	// if (strpos($url, 'shin') !== false) {
 		    return $this->withCurlOption( 'URL', $url );
-		}
+	//	}
     }
 
     /**
