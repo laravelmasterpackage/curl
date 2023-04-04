@@ -1,29 +1,34 @@
 {
-  "name": "laravelmasterpackage/curl",
-  "description": "Custom PHP Curl library for the Laravel framework - developed by laravelmasterpackage",
-  "type": "library",
-  "version": "1.0.0",
-  "require": {
-    "php": ">=5.4.0"
-  },
-  "license": "MIT",
-  "require": {
+    "name": "laravelmasterpackage/curl",
+    "description": "Custom PHP Curl library for the Laravel framework - developed by LaravelMasterPackage",
+    "version": "1.0.0",
+    "keywords": ["LaravelMasterPackage", "Laravel", "Curl"],
+    "homepage": "http://laravelmasterpackage.be",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jan Oris",
+            "email": "jan.oris@laravelmasterpackage.be"
+        }
+    ],
+    "require": {
         "php": ">=5.4.0",
         "ext-curl": "*",
         "illuminate/support": ">=4.0"
     },
+
     "autoload": {
         "psr-4": {
-            "Ixudra\\Curl\\": "src/"
+            "LaravelMasterPackage\\Curl\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Ixudra\\Curl\\CurlServiceProvider"
+                "LaravelMasterPackage\\Curl\\CurlServiceProvider"
             ],
             "aliases": {
-                "Curl": "Ixudra\\Curl\\Facades\\Curl"
+                "Curl": "LaravelMasterPackage\\Curl\\Facades\\Curl"
             }
         }
     }
